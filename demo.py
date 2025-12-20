@@ -90,6 +90,7 @@ def demo(args):
         scene_name = os.path.basename(args.img_dir)
 
     # anchor image selection
+    # change it
     select_indices = uniform_sample(len(image_names), min(100, len(image_names)))
     anchor_images = images[select_indices]
 
