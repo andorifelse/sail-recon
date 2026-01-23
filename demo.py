@@ -48,7 +48,7 @@ def demo(args):
 
     model = model.to(device=device)
     model.eval()
-    print(model)
+    # print(model)
 
     # Load and preprocess example images
     scene_name = "1"
@@ -143,17 +143,19 @@ def demo(args):
                 os.path.join(args.out_dir, scene_name, "pred.txt"),
             )
 
+            from eval.utils.eval_utils import save_all_intrinsics_to_txt
+            save_all_intrinsics_to_txt(predictions, os.path.join(args.out_dir, scene_name, "intrinsics.txt"))
+
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument(
-        "--img_dir", type=str, default="img_set/test", help="input image folder"
+        "--img_dir", type=str, default="/root/autodl-tmp/truck/images", help="input image folder"
     )
     args.add_argument("--vid_dir", type=str, default=None, help="input video path")
-    args.add_argument("--out_dir", type=str, default="outputs", help="output folder")
+    args.add_argument("--out_dir", type=str, default="/root/autodl-tmp/outputs_truck", help="output folder")
     args.add_argument(
         "--ckpt", type=str, default=None, help="pretrained model checkpoint"
     )
     args = args.parse_args()
     demo(args)
-

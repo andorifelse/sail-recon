@@ -15,6 +15,12 @@
             <excludedPath local="true" path="$PROJECT_DIR$/outputs2" />
             <excludedPath local="true" path="$PROJECT_DIR$/skyseg.onnx" />
             <excludedPath local="true" path="$PROJECT_DIR$/debug_logs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs_colmap" />
+            <excludedPath local="true" path="$PROJECT_DIR$/output" />
+            <excludedPath path="/root/sail-recon/outputs_colmap" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs_colmap" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs_Barn" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs_colmap" />
           </excludedPaths>
         </serverdata>
       </paths>
