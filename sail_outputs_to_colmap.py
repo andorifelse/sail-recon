@@ -174,7 +174,7 @@ def save_images(image_paths, out_dir, mode, preprocess_mode, target_size):
                     img = Image.alpha_composite(background, img)
                 img = img.convert("RGB")
                 img = preprocess_image(
-                    img, preprocess_mode, 518, pad_width, pad_height
+                    img, preprocess_mode, target_size, pad_width, pad_height
                 )
                 img.save(out_path)
                 width, height = img.size
@@ -319,7 +319,11 @@ def run(args):
     ensure_dir(sparse_out)
 
     image_names, image_sizes = save_images(
-        image_paths, images_out, args.image_mode, args.preprocess_mode
+        image_paths,
+        images_out,
+        args.image_mode,
+        args.preprocess_mode,
+        target_size=args.target_size
     )
 
     Ks = resolve_intrinsics(
