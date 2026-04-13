@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ebfc720c-01b1-4f1d-943c-2f0f9c257255" name="sail-recon">
-        <fileTransfer rootFolder="/root" accessType="SFTP" host="connect.nmb2.seetacloud.com" port="17783" sshConfigId="d9e777f6-fc16-47cc-ac48-d1feef279f0b" sshConfig="root@connect.nmb2.seetacloud.com:17783 password">
+        <fileTransfer rootFolder="/root" accessType="SFTP" sshConfigId="d9e777f6-fc16-47cc-ac48-d1feef279f0b" sshConfig="gaussian grouping">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

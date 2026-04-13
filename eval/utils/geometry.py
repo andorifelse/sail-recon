@@ -408,9 +408,7 @@ def get_med_dist_between_poses(poses):
 
     return np.median(pdist([to_numpy(p[:3, 3]) for p in poses]))
 
-'''
-将多视角（multi-view）深度学习模型的输出结果处理、合并，并保存为 PLY (Polygon File Format) 格式的点云文件
-'''
+
 def save_pointcloud_with_plyfile(result, filename="output.ply", downsample_ratio=10):
     all_points = []
     all_colors = []

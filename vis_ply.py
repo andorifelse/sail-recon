@@ -4,7 +4,7 @@ import numpy as np
 # -----------------------------------------------------------------------------
 # 配置区域
 # -----------------------------------------------------------------------------
-FILE_PATH = "outputs_Barn/Barn/pred.ply"  # 你的 PLY 文件路径
+FILE_PATH = "/media/wzc/KIOXIA/Gaussian-Grouping/data/mipnerf360/kitchen/sparse/0/points3D.ply"  # 你的 PLY 文件路径
 ENABLE_FILTER = True  # 是否开启去噪 (推荐 True)
 POINT_SIZE = 2.0  # 点的大小
 BACKGROUND_COLOR = [0, 0, 0]  # 背景颜色 [R, G, B] (0-1)

@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="root@connect.nmb2.seetacloud.com:17783 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="gg" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
-      <paths name="root@connect.nmb2.seetacloud.com:17783 password">
+      <paths name="sail-recon">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/sail-recon" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/ckpt" />
+            <excludedPath local="true" path="$PROJECT_DIR$/img_set" />
+            <excludedPath local="true" path="$PROJECT_DIR$/skyseg.onnx" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/outputs2" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="vggt">
         <serverdata>
           <mappings>
             <mapping deploy="/root/sail-recon" local="$PROJECT_DIR$" />
@@ -21,20 +35,6 @@
             <excludedPath local="true" path="$PROJECT_DIR$/outputs_colmap" />
             <excludedPath local="true" path="$PROJECT_DIR$/outputs_Barn" />
             <excludedPath local="true" path="$PROJECT_DIR$/outputs_colmap" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="sail-recon">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/sail-recon" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/ckpt" />
-            <excludedPath local="true" path="$PROJECT_DIR$/img_set" />
-            <excludedPath local="true" path="$PROJECT_DIR$/skyseg.onnx" />
-            <excludedPath local="true" path="$PROJECT_DIR$/outputs" />
-            <excludedPath local="true" path="$PROJECT_DIR$/outputs2" />
           </excludedPaths>
         </serverdata>
       </paths>

@@ -66,9 +66,7 @@ def save_all_intrinsics_to_txt(result, filename="all_intrinsics.txt"):
             f.write(line + "\n")
     print(f"[TXT] Saved {len(result)} intrinsics to {filename}")
 
-# int 是 类型提示 (Type Hint)，它告诉程序员，我们期望 total 和 select 都是整数 (integer) 类型。
-# 这有助于提高代码的可读性，但它不是强制性的（Python 仍允许传入其他类型）。
-# -> list： 同样是类型提示，表明这个函数执行完毕后将返回一个 列表 (list) 类型的结果。
+
 def uniform_sample(total: int, select: int) -> list:
     if select > total:
         raise ValueError("select cannot be greater than total")
